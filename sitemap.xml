@@ -1,12 +1,40 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://eprunier.github.io/blog/2013/06/04/introduction-au-machine-learning-1ere-partie/
+        </loc>
+        <lastmod>2013-07-04T23:05:09+02:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://eprunier.github.io/blog/2013/06/04/introduction-au-machine-learning-2eme-partie/
+        </loc>
+        <lastmod>2013-07-04T23:06:41+02:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://eprunier.github.io/blog/2013/06/05/requetes-https-en-java-via-un-proxy-et-sans-verification-du-hostname/
+        </loc>
+        <lastmod>2013-07-04T23:12:20+02:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://eprunier.github.io/blog/2013/06/20/variables-denvironnement-et-proxy-reseau/
+        </loc>
+        <lastmod>2013-07-04T23:18:23+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://eprunier.github.io/blog/2013/06/29/jvm-et-proxy-reseau/</loc>
+        <lastmod>2013-07-04T23:22:55+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://eprunier.github.io/blog/archives/</loc>
-        <lastmod>2013-07-04T22:11:50+02:00</lastmod>
+        <lastmod>2013-07-04T23:22:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://eprunier.github.io/</loc>
-        <lastmod>2013-07-04T22:11:50+02:00</lastmod>
+        <lastmod>2013-07-04T23:22:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://eprunier.github.io/robots.txt</loc>

@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Eric Prunier</title>
+  <title>Introduction au machine learning - 1ère partie - Eric Prunier</title>
   <meta name="author" content="Eric Prunier">
 
   
-  <meta name="description" content="Blog Archive 2013 JVM et proxy réseau
-Jun 29 2013 posted in Java, Proxy Variables d’environnement et proxy réseau
-Jun 20 2013 posted in Proxy &hellip;">
+  <meta name="description" content="Présentation de l’apprentissage supervisé Ce type d’apprentissage permet de “prédire” la classe ou la valeur d’un nouvel élément
+en fonction d’ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@ Jun 20 2013 posted in Proxy &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://eprunier.github.io/blog/archives">
+  <link rel="canonical" href="http://eprunier.github.io/blog/2013/06/04/introduction-au-machine-learning-1ere-partie">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Eric Prunier" type="application/atom+xml">
@@ -64,91 +63,100 @@ Jun 20 2013 posted in Proxy &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Introduction Au Machine Learning - 1ère Partie</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T22:54:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><h2>Présentation de l’apprentissage supervisé</h2>
 
-  
-  <h2>2013</h2>
+<p>Ce type d’apprentissage permet de “prédire” la classe ou la valeur d’un nouvel élément
+en fonction d’éléments déjà connus. La prédiction d’une valeur continue (ex: détermination
+d’un prix) donne lieu à un problème de régression, tandis que la prédiction d’une valeur
+discrète (ex: classification en tant que spam ou non spam d’un email) donne lieu à un problème
+de classification.</p>
 
-<article>
-  
-<h1><a href="/blog/2013/06/29/jvm-et-proxy-reseau/">JVM et proxy réseau</a></h1>
-<time datetime="2013-06-29T23:19:00+02:00" pubdate><span class='month'>Jun</span> <span class='day'>29</span> <span class='year'>2013</span></time>
+<p>La mise en oeuvre de l’apprentissage supervisé s’effectue en deux temps :</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/java/'>Java</a>, <a class='category' href='/blog/categories/proxy/'>Proxy</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/06/20/variables-denvironnement-et-proxy-reseau/">Variables d’environnement et proxy réseau</a></h1>
-<time datetime="2013-06-20T23:13:00+02:00" pubdate><span class='month'>Jun</span> <span class='day'>20</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/proxy/'>Proxy</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/06/05/requetes-https-en-java-via-un-proxy-et-sans-verification-du-hostname/">Requêtes HTTPS en Java via un proxy et sans vérification du hostname</a></h1>
-<time datetime="2013-06-05T23:08:00+02:00" pubdate><span class='month'>Jun</span> <span class='day'>05</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/howto/'>Howto</a>, <a class='category' href='/blog/categories/java/'>Java</a>, <a class='category' href='/blog/categories/networking/'>Networking</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/06/04/introduction-au-machine-learning-2eme-partie/">Introduction au machine learning - 2ème partie</a></h1>
-<time datetime="2013-06-04T23:03:00+02:00" pubdate><span class='month'>Jun</span> <span class='day'>04</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/machine/'>Machine</a>, <a class='category' href='/blog/categories/learning/'>learning</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/06/04/introduction-au-machine-learning-1ere-partie/">Introduction au machine learning - 1ère partie</a></h1>
-<time datetime="2013-06-04T22:54:00+02:00" pubdate><span class='month'>Jun</span> <span class='day'>04</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/machine/'>Machine</a>, <a class='category' href='/blog/categories/learning/'>learning</a></span>
-</footer>
-
-
-</article>
+<ol>
+<li>la phase d’apprentissage durant laquelle l’algorithme est “entraîné” à partir des
+éléments connus.</li>
+<li>la phase de prédiction durant laquelle l’algorithme est appliqué à de nouveaux éléments
+afin d’en déduire la valeur de sortie.</li>
+</ol>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Eric Prunier</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T22:54:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/machine/'>Machine</a>, <a class='category' href='/blog/categories/learning/'>learning</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://eprunier.github.io/blog/2013/06/04/introduction-au-machine-learning-1ere-partie/" data-via="" data-counturl="http://eprunier.github.io/blog/2013/06/04/introduction-au-machine-learning-1ere-partie/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/06/04/introduction-au-machine-learning-2eme-partie/" title="Next Post: Introduction au machine learning - 2ème partie">Introduction au machine learning - 2ème partie &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
 </div>

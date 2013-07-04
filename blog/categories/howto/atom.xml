@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Howto | Eric Prunier]]></title>
+  <link href="http://eprunier.github.io/blog/categories/howto/atom.xml" rel="self"/>
+  <link href="http://eprunier.github.io/"/>
+  <updated>2013-07-04T23:22:56+02:00</updated>
+  <id>http://eprunier.github.io/</id>
+  <author>
+    <name><![CDATA[Eric Prunier]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Requêtes HTTPS en Java via un proxy et sans vérification du hostname]]></title>
+    <link href="http://eprunier.github.io/blog/2013/06/05/requetes-https-en-java-via-un-proxy-et-sans-verification-du-hostname/"/>
+    <updated>2013-06-05T23:08:00+02:00</updated>
+    <id>http://eprunier.github.io/blog/2013/06/05/requetes-https-en-java-via-un-proxy-et-sans-verification-du-hostname</id>
+    <content type="html"><![CDATA[<p>Création d’un client permettant d’effectuer des requêtes HTTP/HTTPS via un proxy.
+Pour les requête HTTPS, ce client autorise la connection même si le hostname du
+serveur ne correspond pas aux données du certificat SSL (par exemple dans le cas
+d’un certificat de test).</p>
+
+<p>Ce code utilise Apache HttpComponents.</p>
+
+<p><div><script src='https://gist.github.com/5671063.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

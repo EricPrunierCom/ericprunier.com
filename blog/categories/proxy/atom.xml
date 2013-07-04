@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Proxy | Eric Prunier]]></title>
+  <link href="http://eprunier.github.io/blog/categories/proxy/atom.xml" rel="self"/>
+  <link href="http://eprunier.github.io/"/>
+  <updated>2013-07-04T23:22:56+02:00</updated>
+  <id>http://eprunier.github.io/</id>
+  <author>
+    <name><![CDATA[Eric Prunier]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[JVM et proxy réseau]]></title>
+    <link href="http://eprunier.github.io/blog/2013/06/29/jvm-et-proxy-reseau/"/>
+    <updated>2013-06-29T23:19:00+02:00</updated>
+    <id>http://eprunier.github.io/blog/2013/06/29/jvm-et-proxy-reseau</id>
+    <content type="html"><![CDATA[<p>Paramètres de la JVM à positionner lorsque le traffic réseau doit passer par un proxy :</p>
+
+<ul>
+<li>http.proxyHost</li>
+<li>http.proxyPort</li>
+<li>https.proxyHost</li>
+<li>https.proxyPort</li>
+<li>http.nonProxyHosts : liste d’hôtes séparés par un &ldquo;|&rdquo; (les wildcards sont autorisés)</li>
+</ul>
+
+
+<p><strong>Exemple :</strong> -Dhttp.proxyHost=example.com -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|192.168.*</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Variables d’environnement et proxy réseau]]></title>
+    <link href="http://eprunier.github.io/blog/2013/06/20/variables-denvironnement-et-proxy-reseau/"/>
+    <updated>2013-06-20T23:13:00+02:00</updated>
+    <id>http://eprunier.github.io/blog/2013/06/20/variables-denvironnement-et-proxy-reseau</id>
+    <content type="html"><![CDATA[<p>Variables d’environnement pour l’utilisation d’un proxy réseau :</p>
+
+<ul>
+<li>http_proxy</li>
+<li>ftp_proxy</li>
+<li>https_proxy</li>
+<li>http_no_proxy : liste d’hôtes séparés par &ldquo;|&rdquo; (les wildcards sont autorisés)</li>
+<li>no_proxy : liste d’hôtes séparés par &ldquo;|&rdquo; (les wildcards ne sont pas autorisés)</li>
+</ul>
+
+
+<p>Exemples :</p>
+
+<ul>
+<li>http_proxy=<a href="http://example.com:8080">http://example.com:8080</a></li>
+<li>http_no_proxy=localhost|192.168.*</li>
+<li>no_proxy=localhost|192.168.1.1</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

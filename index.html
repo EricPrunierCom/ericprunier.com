@@ -9,7 +9,10 @@
   <meta name="author" content="Eric Prunier">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="Paramètres de la JVM à positionner lorsque le traffic réseau doit passer par un proxy : http.proxyHost
+http.proxyPort
+https.proxyHost
+https.proxyPort &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +67,250 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/29/jvm-et-proxy-reseau/">JVM Et Proxy Réseau</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-29T23:19:00+02:00" pubdate data-updated="true">Jun 29<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Paramètres de la JVM à positionner lorsque le traffic réseau doit passer par un proxy :</p>
+
+<ul>
+<li>http.proxyHost</li>
+<li>http.proxyPort</li>
+<li>https.proxyHost</li>
+<li>https.proxyPort</li>
+<li>http.nonProxyHosts : liste d’hôtes séparés par un &ldquo;|&rdquo; (les wildcards sont autorisés)</li>
+</ul>
+
+
+<p><strong>Exemple :</strong> -Dhttp.proxyHost=example.com -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|192.168.*</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/20/variables-denvironnement-et-proxy-reseau/">Variables D’environnement Et Proxy Réseau</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-20T23:13:00+02:00" pubdate data-updated="true">Jun 20<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Variables d’environnement pour l’utilisation d’un proxy réseau :</p>
+
+<ul>
+<li>http_proxy</li>
+<li>ftp_proxy</li>
+<li>https_proxy</li>
+<li>http_no_proxy : liste d’hôtes séparés par &ldquo;|&rdquo; (les wildcards sont autorisés)</li>
+<li>no_proxy : liste d’hôtes séparés par &ldquo;|&rdquo; (les wildcards ne sont pas autorisés)</li>
+</ul>
+
+
+<p>Exemples :</p>
+
+<ul>
+<li>http_proxy=<a href="http://example.com:8080">http://example.com:8080</a></li>
+<li>http_no_proxy=localhost|192.168.*</li>
+<li>no_proxy=localhost|192.168.1.1</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/05/requetes-https-en-java-via-un-proxy-et-sans-verification-du-hostname/">Requêtes HTTPS en Java via Un Proxy Et Sans Vérification Du Hostname</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-05T23:08:00+02:00" pubdate data-updated="true">Jun 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Création d’un client permettant d’effectuer des requêtes HTTP/HTTPS via un proxy.
+Pour les requête HTTPS, ce client autorise la connection même si le hostname du
+serveur ne correspond pas aux données du certificat SSL (par exemple dans le cas
+d’un certificat de test).</p>
+
+<p>Ce code utilise Apache HttpComponents.</p>
+
+<div><script src='https://gist.github.com/5671063.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/04/introduction-au-machine-learning-2eme-partie/">Introduction Au Machine Learning - 2ème Partie</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T23:03:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Présentation de l’apprentissage non supervisé</h2>
+
+<p>Ce type d’apprentissage permet d’identifier des groupes d’éléments par
+découverte de caractéristiques communes. Contrairement à l’apprentissage
+supervisé, aucune donnée initiale n’est fournit, le regroupement
+s’effectuant de manière automatique.</p>
+
+<p>Une fois les groupes découverts, ceux-ci peuvent servir de base à un
+apprentissage supervisé comme par exemple la classification de nouveaux éléments.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/04/introduction-au-machine-learning-1ere-partie/">Introduction Au Machine Learning - 1ère Partie</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T22:54:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Présentation de l’apprentissage supervisé</h2>
+
+<p>Ce type d’apprentissage permet de “prédire” la classe ou la valeur d’un nouvel élément
+en fonction d’éléments déjà connus. La prédiction d’une valeur continue (ex: détermination
+d’un prix) donne lieu à un problème de régression, tandis que la prédiction d’une valeur
+discrète (ex: classification en tant que spam ou non spam d’un email) donne lieu à un problème
+de classification.</p>
+
+<p>La mise en oeuvre de l’apprentissage supervisé s’effectue en deux temps :</p>
+
+<ol>
+<li>la phase d’apprentissage durant laquelle l’algorithme est “entraîné” à partir des
+éléments connus.</li>
+<li>la phase de prédiction durant laquelle l’algorithme est appliqué à de nouveaux éléments
+afin d’en déduire la valeur de sortie.</li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -75,6 +322,26 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/06/29/jvm-et-proxy-reseau/">JVM Et Proxy Réseau</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/20/variables-denvironnement-et-proxy-reseau/">Variables D’environnement Et Proxy Réseau</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/05/requetes-https-en-java-via-un-proxy-et-sans-verification-du-hostname/">Requêtes HTTPS en Java via Un Proxy Et Sans Vérification Du Hostname</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/introduction-au-machine-learning-2eme-partie/">Introduction Au Machine Learning - 2ème Partie</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/introduction-au-machine-learning-1ere-partie/">Introduction Au Machine Learning - 1ère Partie</a>
+      </li>
     
   </ul>
 </section>
