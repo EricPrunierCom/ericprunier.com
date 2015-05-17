@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <a href="https://github.com/OpenApiFr/openapifr.github.io">
+      <img style="position: absolute; top: 0; right: 0; border: 0; z-index: 100;"
+        src="{{site.url}}/images/github-banner.png"
+        alt="Fork me on GitHub" />
+    </a>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

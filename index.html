@@ -1,468 +1,61 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Eric Prunier</title>
-  <meta name="author" content="Eric Prunier">
-
-  
-  <meta name="description" content="Paramètres de la JVM à positionner lorsque le traffic réseau doit passer par un proxy : http.proxyHost
-http.proxyPort
-https.proxyHost
-https.proxyPort &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://eprunier.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Eric Prunier" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Eric Prunier</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:eprunier.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/29/jvm-et-proxy-reseau/">JVM Et Proxy Réseau</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-29T23:19:00+02:00" pubdate data-updated="true">Jun 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Paramètres de la JVM à positionner lorsque le traffic réseau doit passer par un proxy :</p>
-
-<ul>
-<li>http.proxyHost</li>
-<li>http.proxyPort</li>
-<li>https.proxyHost</li>
-<li>https.proxyPort</li>
-<li>http.nonProxyHosts : liste d’hôtes séparés par un &ldquo;|&rdquo; (les wildcards sont autorisés)</li>
-</ul>
-
-
-<p><strong>Exemple :</strong> -Dhttp.proxyHost=example.com -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|192.168.*</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/20/variables-denvironnement-et-proxy-reseau/">Variables D’environnement Et Proxy Réseau</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-20T23:13:00+02:00" pubdate data-updated="true">Jun 20<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Variables d’environnement pour l’utilisation d’un proxy réseau :</p>
-
-<ul>
-<li>http_proxy</li>
-<li>ftp_proxy</li>
-<li>https_proxy</li>
-<li>http_no_proxy : liste d’hôtes séparés par &ldquo;|&rdquo; (les wildcards sont autorisés)</li>
-<li>no_proxy : liste d’hôtes séparés par &ldquo;|&rdquo; (les wildcards ne sont pas autorisés)</li>
-</ul>
-
-
-<p>Exemples :</p>
-
-<ul>
-<li>http_proxy=<a href="http://example.com:8080">http://example.com:8080</a></li>
-<li>http_no_proxy=localhost|192.168.*</li>
-<li>no_proxy=localhost|192.168.1.1</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/05/requetes-https-en-java-via-un-proxy-et-sans-verification-du-hostname/">Requêtes HTTPS en Java via Un Proxy Et Sans Vérification Du Hostname</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-05T23:08:00+02:00" pubdate data-updated="true">Jun 5<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Création d’un client permettant d’effectuer des requêtes HTTP/HTTPS via un proxy.
-Pour les requête HTTPS, ce client autorise la connection même si le hostname du
-serveur ne correspond pas aux données du certificat SSL (par exemple dans le cas
-d’un certificat de test).</p>
-
-<p>Ce code utilise Apache HttpComponents.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kn">import</span> <span class="nn">javax.net.ssl.SSLContext</span><span class="o">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.HttpHost</span><span class="o">;</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.client.HttpClient</span><span class="o">;</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.conn.params.ConnRoutePNames</span><span class="o">;</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.conn.scheme.PlainSocketFactory</span><span class="o">;</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.conn.scheme.Scheme</span><span class="o">;</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.conn.scheme.SchemeRegistry</span><span class="o">;</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.conn.ssl.SSLSocketFactory</span><span class="o">;</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.impl.client.DefaultHttpClient</span><span class="o">;</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager</span><span class="o">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SSLUtils</span> <span class="o">{</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-</span><span class='line'>    <span class="c1">// Setup HTTP scheme</span>
-</span><span class='line'>    <span class="n">Scheme</span> <span class="n">httpScheme</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scheme</span><span class="o">(</span><span class="s">&quot;http&quot;</span><span class="o">,</span> <span class="mi">80</span><span class="o">,</span> <span class="n">PlainSocketFactory</span><span class="o">.</span><span class="na">getSocketFactory</span><span class="o">());</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="c1">// Setup HTTPS scheme</span>
-</span><span class='line'>    <span class="n">SSLContext</span> <span class="n">sslcontext</span> <span class="o">=</span> <span class="n">SSLContext</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">&quot;TLS&quot;</span><span class="o">);</span>
-</span><span class='line'>    <span class="n">sslcontext</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
-</span><span class='line'>    <span class="n">SSLSocketFactory</span> <span class="n">sf</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SSLSocketFactory</span><span class="o">(</span><span class="n">sslcontext</span><span class="o">,</span> <span class="n">SSLSocketFactory</span><span class="o">.</span><span class="na">ALLOW_ALL_HOSTNAME_VERIFIER</span><span class="o">);</span>
-</span><span class='line'>    <span class="n">Scheme</span> <span class="n">httpsScheme</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scheme</span><span class="o">(</span><span class="s">&quot;https&quot;</span><span class="o">,</span> <span class="mi">443</span><span class="o">,</span> <span class="n">sf</span><span class="o">);</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="c1">// Create registry and add schemes</span>
-</span><span class='line'>    <span class="n">SchemeRegistry</span> <span class="n">schemeRegistry</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SchemeRegistry</span><span class="o">();</span>
-</span><span class='line'>    <span class="n">schemeRegistry</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="n">httpScheme</span><span class="o">);</span>
-</span><span class='line'>    <span class="n">schemeRegistry</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="n">httpsScheme</span><span class="o">);</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="c1">// Create HTTP client</span>
-</span><span class='line'>    <span class="kd">final</span> <span class="n">ThreadSafeClientConnManager</span> <span class="n">cm</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadSafeClientConnManager</span><span class="o">(</span><span class="n">schemeRegistry</span><span class="o">);</span>
-</span><span class='line'>    <span class="kd">final</span> <span class="n">HttpClient</span> <span class="n">client</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DefaultHttpClient</span><span class="o">(</span><span class="n">cm</span><span class="o">);</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="c1">// Setup HTTP proxy</span>
-</span><span class='line'>    <span class="kd">final</span> <span class="n">String</span> <span class="n">proxyHost</span> <span class="o">=</span> <span class="s">&quot;http://proxy.example.com&quot;</span><span class="o">;</span>
-</span><span class='line'>    <span class="kd">final</span> <span class="kt">int</span> <span class="n">proxyPort</span> <span class="o">=</span> <span class="mi">12345</span><span class="o">;</span>
-</span><span class='line'>    <span class="kd">final</span> <span class="n">HttpHost</span> <span class="n">proxy</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HttpHost</span><span class="o">(</span><span class="n">proxyHost</span><span class="o">,</span> <span class="n">proxyPort</span><span class="o">);</span>
-</span><span class='line'>    <span class="n">client</span><span class="o">.</span><span class="na">getParams</span><span class="o">().</span><span class="na">setParameter</span><span class="o">(</span><span class="n">ConnRoutePNames</span><span class="o">.</span><span class="na">DEFAULT_PROXY</span><span class="o">,</span> <span class="n">proxy</span><span class="o">);</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="c1">// Now we can use client to send requests....</span>
-</span><span class='line'>  <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/04/introduction-au-machine-learning-2eme-partie/">Introduction Au Machine Learning - 2ème Partie</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-04T23:03:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Présentation de l’apprentissage non supervisé</h2>
-
-<p>Ce type d’apprentissage permet d’identifier des groupes d’éléments par
-découverte de caractéristiques communes. Contrairement à l’apprentissage
-supervisé, aucune donnée initiale n’est fournit, le regroupement
-s’effectuant de manière automatique.</p>
-
-<p>Une fois les groupes découverts, ceux-ci peuvent servir de base à un
-apprentissage supervisé comme par exemple la classification de nouveaux éléments.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/04/introduction-au-machine-learning-1ere-partie/">Introduction Au Machine Learning - 1ère Partie</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-04T22:54:00+02:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Présentation de l’apprentissage supervisé</h2>
-
-<p>Ce type d’apprentissage permet de “prédire” la classe ou la valeur d’un nouvel élément
-en fonction d’éléments déjà connus. La prédiction d’une valeur continue (ex: détermination
-d’un prix) donne lieu à un problème de régression, tandis que la prédiction d’une valeur
-discrète (ex: classification en tant que spam ou non spam d’un email) donne lieu à un problème
-de classification.</p>
-
-<p>La mise en oeuvre de l’apprentissage supervisé s’effectue en deux temps :</p>
-
-<ol>
-<li>la phase d’apprentissage durant laquelle l’algorithme est “entraîné” à partir des
-éléments connus.</li>
-<li>la phase de prédiction durant laquelle l’algorithme est appliqué à de nouveaux éléments
-afin d’en déduire la valeur de sortie.</li>
-</ol>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/06/29/jvm-et-proxy-reseau/">JVM Et Proxy Réseau</a>
+---
+layout: default
+---
+
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+
+        {% if post.content contains '<!--break-->' %}
+        <article class="post-extract">
+            {{ post.content | split:'<!--break-->' | first }}
+            <a href="{{ post.url }}"> >></a>
+            <div>
+              <span class="post-meta">
+                {% assign m = post.date | date: "%-m" %}
+                {{ post.date | date: "%-d" }}
+                {% case m %}
+                  {% when '1' %}janvier
+                  {% when '2' %}février
+                  {% when '3' %}mars
+                  {% when '4' %}avril
+                  {% when '5' %}mai
+                  {% when '6' %}juin
+                  {% when '7' %}juillet
+                  {% when '8' %}août
+                  {% when '9' %}septembre
+                  {% when '10' %}octobre
+                  {% when '11' %}novembre
+                  {% when '12' %}décembre
+                {% endcase %}
+                {{ post.date | date: "%Y" }}
+              </span>
+            </div>
+        </article>
+
+        {% endif %}
       </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/20/variables-denvironnement-et-proxy-reseau/">Variables D’environnement Et Proxy Réseau</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/05/requetes-https-en-java-via-un-proxy-et-sans-verification-du-hostname/">Requêtes HTTPS en Java via Un Proxy Et Sans Vérification Du Hostname</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/04/introduction-au-machine-learning-2eme-partie/">Introduction Au Machine Learning - 2ème Partie</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/04/introduction-au-machine-learning-1ere-partie/">Introduction Au Machine Learning - 1ère Partie</a>
-      </li>
-    
+    {% endfor %}
   </ul>
-</section>
 
-
-
-
-
-  
-</aside>
-
-    </div>
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous"><< </a>
+    {% else %}
+      <span class="previous disabled"><< </span>
+    {% endif %}
+    <span class="page_number ">page {{ paginator.page }} sur {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next"> >></a>
+    {% else %}
+      <span class="next disabled"> >></span>
+    {% endif %}
   </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Eric Prunier -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
 
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</div>
