@@ -7,10 +7,13 @@ tags:
   - Actualités
   - Google
   - Open Innovation
+summary: |
+  Google à lancé ce mois ci un appel à contribution pour le lancement d'un projet d'open innovation dans le domaine de l'Internet des objets.
+  Les réponses sont à présenter avant le 21 janvier 2015...
 ---
+
 Google à lancé ce mois ci un appel à contribution pour le lancement d'un projet d'open innovation dans le domaine de l'Internet des objets.
 Les réponses sont à présenter avant le 21 janvier 2015.
-<!--break-->
 
 La première étape de ce projet comprend deux volets :
 

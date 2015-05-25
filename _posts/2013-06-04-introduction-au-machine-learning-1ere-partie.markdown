@@ -6,6 +6,12 @@ author: Eric Prunier
 tags:
   - Présentation
   - Machine learning
+summary: |
+  Ce type d’apprentissage permet de “prédire” la classe ou la valeur d’un nouvel élément
+  en fonction d’éléments déjà connus. La prédiction d’une valeur continue (ex: détermination
+  d’un prix) donne lieu à un problème de régression, tandis que la prédiction d’une valeur
+  discrète (ex: classification en tant que spam ou non spam d’un email) donne lieu à un problème
+  de classification...
 ---
 
 ##Présentation de l’apprentissage supervisé
@@ -15,7 +21,6 @@ en fonction d’éléments déjà connus. La prédiction d’une valeur continue
 d’un prix) donne lieu à un problème de régression, tandis que la prédiction d’une valeur
 discrète (ex: classification en tant que spam ou non spam d’un email) donne lieu à un problème
 de classification.
-<!--break-->
 
 La mise en oeuvre de l’apprentissage supervisé s’effectue en deux temps :
 

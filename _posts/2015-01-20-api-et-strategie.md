@@ -6,9 +6,11 @@ author: Eric Prunier
 tags:
   - Outils
   - Modélisation
+summary: |
+  En 2000 nous avons assisté au boom de l'Internet et depuis, plétore de services ont vu le jour, principalement sous la forme de sites Web. Depuis quelques années, nous voyons les éditeurs ouvrir de nouvelles voies d'accès à leurs services. En plus de l'exposition aux êtres humains via le Web, ces services peuvent maintenant être consommés par d'autres services via des APIs...
 ---
+
 En 2000 nous avons assisté au _boom_ de l'Internet et depuis, plétore de services ont vu le jour, principalement sous la forme de sites Web. Depuis quelques années, nous voyons les éditeurs ouvrir de nouvelles voies d'accès à leurs services. En plus de l'exposition aux êtres humains via le Web, ces services peuvent maintenant être consommés par d'autres services via des APIs.
-<!--break-->
 
 Dans son article _[Don’t API all the things … The downside of public APIs](http://softwareas.com/apis-considered-harmful-maybe/)_, Michael Mahemoff liste les inconvénients liés à la publication d'API. Cependant ces inconvénients sont également autant de facteurs de succès lors de l'_APIsation_ d'un service, considérons les alors comme des points d'attention sans leur donner de connotation positive ou négative. Comment ces points doivent-ils être traités et y a t'il une stratégie à mettre en oeuvre ?
 

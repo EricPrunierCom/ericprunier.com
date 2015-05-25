@@ -7,11 +7,11 @@ tags:
   - Technique
   - Java
   - Proxy
+summary: |
+  Paramètres de la JVM à positionner lorsque le traffic réseau doit passer par un proxy...
 ---
 
-Paramètres de la JVM à positionner lorsque le traffic réseau doit passer par un proxy
-<!--break-->
-:
+Paramètres de la JVM à positionner lorsque le traffic réseau doit passer par un proxy :
 
 * http.proxyHost
 * http.proxyPort

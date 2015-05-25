@@ -6,12 +6,15 @@ author: Eric Prunier
 tags:
   - Technique
   - Bonnes pratiques
+summary: |
+  Paypal vient de mettre à disposition sur son compte GitHub un guide sur le design de ses APIs.
+  
+  Au delà de l'aspect purement documentaire, ce guide expose de façon simple et clair, bon nombre de bonnes pratiques en terme de design d'API RESTful.
 ---
 
 Paypal vient de mettre à disposition sur son compte GitHub un [guide sur le design de ses APIs](https://github.com/paypal/api-standards/blob/master/api-style-guide.md).
 
 Au delà de l'aspect purement documentaire, ce guide expose de façon simple et clair, bon nombre de bonnes pratiques en terme de design d'API RESTful.
-<!--break-->
 
 On y trouve des sujets classiques comme :
 

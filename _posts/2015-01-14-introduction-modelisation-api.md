@@ -9,15 +9,17 @@ tags:
   - Swagger
   - RAML
   - Api Blueprint
+summary: |
+  Ces dernières années différentes initiatives ont été lancées dans le domaine de la modélisation et de la documentation d'API RESTful (Swagger, API Blueprint, RAML). Chacune est née d'un besoin spécifique, et bien que ces initiatives tendent à se rejoindre en terme de fonctionnalités, leurs approches différent...
 ---
+
 Ces dernières années différentes initiatives ont été lancées dans le domaine de la modélisation et de la documentation d'API RESTful :
 
 * Swagger
 * API Blueprint
 * RAML
 
-Chacune est née d'un besoin spécifique et bien que ces initiatives tendent à se rejoindre en terme de fonctionnalités, leurs approches différent.
-<!--break-->
+Chacune est née d'un besoin spécifique, et bien que ces initiatives tendent à se rejoindre en terme de fonctionnalités, leurs approches différent.
 
 Ces trois solutions sont open source. Swagger est la plus ancienne et beaucoup d'outils la supportent. RAML est la plus récente mais attire déjà l'attention de bon nombre d'acteurs du marché.
 

@@ -7,11 +7,11 @@ tags:
   - Technique
   - Système
   - Proxy
+summary: |
+  Variables d’environnement pour l’utilisation d’un proxy réseau...
 ---
 
-Variables d’environnement pour l’utilisation d’un proxy réseau
-<!--break-->
-:
+Variables d’environnement pour l’utilisation d’un proxy réseau :
 
 * http_proxy
 * ftp_proxy

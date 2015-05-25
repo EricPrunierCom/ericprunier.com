@@ -7,13 +7,17 @@ tags:
   - Technique
   - Réseau
   - Java
+summary: |
+  Création d’un client permettant d’effectuer des requêtes HTTP/HTTPS via un proxy.
+  Pour les requête HTTPS, ce client autorise la connection même si le hostname du
+  serveur ne correspond pas aux données du certificat SSL (par exemple dans le cas
+  d’un certificat de test)...
 ---
 
 Création d’un client permettant d’effectuer des requêtes HTTP/HTTPS via un proxy.
 Pour les requête HTTPS, ce client autorise la connection même si le hostname du
 serveur ne correspond pas aux données du certificat SSL (par exemple dans le cas
 d’un certificat de test).
-<!--break-->
 
 Ce code utilise Apache HttpComponents.
 
