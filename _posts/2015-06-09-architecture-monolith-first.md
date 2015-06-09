@@ -7,7 +7,7 @@ tags:
   - Analyse
   - Architecture
 summary: |
-  Même si l'intérêt d'une [architecture microservices](http://martinfowler.com/articles/microservices.html) peut sembler évidente dans certains cas, il est préférable de commencer systématiquement par le développement d'un monolithe.
+  Même si l'intérêt d'une architecture microservices peut sembler évidente dans certains cas, il est préférable de commencer systématiquement par le développement d'un monolithe.
 ---
 
 Même si l'intérêt d'une [architecture microservices](http://martinfowler.com/articles/microservices.html) peut sembler évidente dans certains cas, il est préférable de commencer systématiquement par le développement d'un monolithe.
